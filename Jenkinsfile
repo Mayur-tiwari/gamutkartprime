@@ -26,7 +26,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'sshpass -p tiwariji scp target/flipkart-1.0-SNAPSHOT.jar tiwariji@172.31.4.197:/home/tiwariji/apache-tomcat-8.5.98/webapps'
+		sh 'sshpass -p tiwariji scp target/gamutkart.war tiwariji@172.31.4.197:/home/tiwariji/apache-tomcat-8.5.98/webapps'
 	}
     }
 }
